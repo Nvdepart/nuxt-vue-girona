@@ -6,6 +6,7 @@
       <nuxt-link to="/usuaris-vue">Usuaris en vue</nuxt-link>
       <nuxt-link to="/contador">Contador</nuxt-link>
       <nuxt-link to="/contador-propi">Contador propi</nuxt-link>
+      <nuxt-link to="/functions"> Funcio amb Es6</nuxt-link>
       <nuxt/>
     </v-main>
    </v-app>

@@ -3,11 +3,19 @@
         <h1>{{titol}}</h1>
         <p v-html="descripcio"></p>
         {{contador}}
-        <button v-on:click="augmentar()">augmentar</button>
-        <button @click="disminuir()">disminuir</button>
+        <button class="sty" v-on:click="augmentar()">augmentar</button>
+        <button class="sty" @click="disminuir()">disminuir</button>
     </div>
 </template>
-
+<style>
+    .sty{
+        background-color:rgb(23, 128, 56);
+        text-align:center;
+        border-radius:5px;
+        padding:5px;
+        margin:20px;
+    }
+</style>
 <script>
     export default {
         data:function(){
@@ -20,11 +28,11 @@
         methods:{
             augmentar:function(){
                 this.contador++
-                this.titol = "He augmentat"
+                this.titol = "He augmentat el contador de " + this.contador + " unitats"
             },
             disminuir:function(){
                 this.contador--
-                this.titol = "He disminuit"
+                this.titol = "He disminuit el contador de " + this.contador + " unitats"
             }
         }
     }

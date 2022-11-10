@@ -35,5 +35,11 @@
       >
       lista usuaris 
     </nuxt-link>
+    <br>
+    <nuxt-link 
+      to="/functions"  
+      >
+      Funcio amb ES6 
+    </nuxt-link>
   </div>
 </template>

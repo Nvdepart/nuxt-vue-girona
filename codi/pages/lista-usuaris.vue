@@ -7,16 +7,22 @@
                 :key="posicio">
                 {{usuari.firstName}}    
                 {{posicio}}/{{usuaris.length}}
-                <v-img v-bind:src="usuari.image"></v-img>
+                <v-img class="imgSty" v-bind:src="usuari.image"></v-img>
                 </v-col>
             </v-row>
     </v-container>
 
-
-
 </template>
 
 <style>
+    .imgSty{
+        background-color:rgb(234, 237, 32);
+        color:rgb(255, 255, 255);
+        text-align:center;
+        border-radius:5px;
+        padding:5px;
+        margin:2px;
+    }
     .columna{
         background-color:rgb(23, 128, 56);
         color:rgb(255, 255, 255);
