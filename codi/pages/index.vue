@@ -41,5 +41,11 @@
       >
       Funcio amb ES6 
     </nuxt-link>
+    <br>
+    <nuxt-link 
+    to="/porfoli"
+    >
+    Porfolicd 
+  </nuxt-link>
   </div>
 </template>

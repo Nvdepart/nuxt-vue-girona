@@ -1,7 +1,11 @@
 <template>
-    <v-container class="contenidor"> 
+
+<div>
+
             <v-row class="fila"> 
                 <v-col
+                cols="12"
+                sm="4"
                 class="columna"
                 v-for="(usuari,posicio) in usuaris"
                 :key="posicio">
@@ -10,7 +14,12 @@
                 <v-img class="imgSty" v-bind:src="usuari.image"></v-img>
                 </v-col>
             </v-row>
-    </v-container>
+            <v-row>
+                <v-col>
+                    <pre>{{usuaris}}</pre>
+                </v-col>
+            </v-row>
+</div>
 
 </template>
 
@@ -47,6 +56,7 @@
 
 <script>
         export default{
+            layout:"basic",
             created(){
                 console.log("S'ha creat la pagina")
             },

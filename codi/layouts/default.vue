@@ -7,6 +7,7 @@
       <nuxt-link to="/contador">Contador</nuxt-link>
       <nuxt-link to="/contador-propi">Contador propi</nuxt-link>
       <nuxt-link to="/functions"> Funcio amb Es6</nuxt-link>
+      <nuxt-link to="/porfoli">Porfoli</nuxt-link>
       <nuxt/>
     </v-main>
    </v-app>
